@@ -26,7 +26,7 @@ const Producto = () => {
 
     const buscarProducto = (e) => {          
         productos.forEach((producto) => {
-            if (producto.id.includes(id)) {
+            if (producto.id.toString().includes(id)) {
                 setProductos2([producto]);
             }
         })      
